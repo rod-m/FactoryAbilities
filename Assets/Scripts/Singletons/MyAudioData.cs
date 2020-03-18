@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Singletons;
+﻿using Singletons;
 using UnityEngine;
 /// <summary>
 /// https://www.daggerhart.com/unity-audio-and-sound-manager-singleton-script/
 /// </summary>
-public class MyAudioData : GenericSingleton<MyAudioData>
+public sealed class MyAudioData : GenericSingleton<MyAudioData>
 {
     // Audio players components.
     public AudioSource EffectsSource;
