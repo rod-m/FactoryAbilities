@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using Singletons;
-public class GameManagerSingleton : GenericSingleton<GameManagerSingleton>
+public sealed class GameManagerSingleton : GenericSingleton<GameManagerSingleton>
 {
     private int _score = 0;
     public int Score
