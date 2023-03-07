@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace
 {
-    public interface AbilityInterface
+    public interface IAbilityUse
     {
         void UseAbility();
     }

@@ -1,12 +1,15 @@
-﻿using UnityEngine;
-using Factories.Static;
+﻿using AbilityDump;
+using UnityEngine;
+// using Factories.Static;
+using Factories.GenericStatic;
+
 public class AbilityPanel : MonoBehaviour
 {
     [SerializeField] private AbilityButton buttonPrefab;
-    // Start is called before the first frame update
+
     private void OnEnable()
     {
-        foreach (string name in AbilityFactory.GetAbilityNames())
+        foreach (string name in GenericStaticFactory<BaseAbility>.GetComponentNames())
         {
             var btn = Instantiate(buttonPrefab);
             btn.gameObject.name = name + " Button";

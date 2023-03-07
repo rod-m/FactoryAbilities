@@ -1,8 +1,9 @@
 ﻿using DefaultNamespace;
 using UnityEngine;
-using Factories.Static;
+using Factories.GenericStatic;
+using AbilityDump;
 using UnityEngine.UI;
-public class AbilityButton : MonoBehaviour, AbilityInterface
+public class AbilityButton : MonoBehaviour, IAbilityUse
 {
     private BaseAbility ability;
  
@@ -14,6 +15,6 @@ public class AbilityButton : MonoBehaviour, AbilityInterface
     public void SetAbilityName(string name)
     {
         this.GetComponentInChildren<Text>().text = name;
-        ability = AbilityFactory.GetAbility(name);
+        ability = GenericStaticFactory<BaseAbility>.GetComponentTypeByName(name) as BaseAbility;
     }
 }
