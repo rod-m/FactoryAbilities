@@ -47,6 +47,8 @@
      <Compile Include="Assets/Scripts/Factories/Static/AbilityFactory.cs" />
      <Compile Include="Assets/Scripts/AbilityDump/BaseAbility.cs" />
      <Compile Include="Assets/Scripts/Factories/Simple/AbilityFactory.cs" />
+     <Compile Include="Assets/Scripts/AnotherFactory/BaseHandicap.cs" />
+     <Compile Include="Assets/Scripts/AnotherFactory/EnergyZap.cs" />
      <Compile Include="Assets/Scripts/Singletons/BasicGameManager.cs" />
      <Compile Include="Assets/Particlecollection_Free samples/Plugins/Effect/Script/CameraTarget.cs" />
      <Compile Include="Assets/Particlecollection_Free samples/Plugins/Effect/Script/EffectController.cs" />
@@ -75,8 +77,6 @@
      <Compile Include="Assets/Scripts/AbilityDump/SpeedWaveAbility.cs" />
      <Compile Include="Assets/Scripts/Factories/Reflection/HealAbility.cs" />
      <Compile Include="Assets/Scripts/PlayerNav.cs" />
-     <Compile Include="Assets/Scripts/AnotherFactory/BaseHandicap.cs" />
-     <Compile Include="Assets/Scripts/AnotherFactory/EnergyZap.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Scripts/AbilityDump" />
      <None Include="Assets/Particlecollection_Free samples/Plugins/Effect/Shader/Toon Blended Premmultiply.shader" />
