@@ -5,6 +5,8 @@ namespace AbilityDump
     {
         public override string Name => "Speed Wave";
 
+        public override string SpriteName => "SpeedWave";
+
         public override void Process()
         {
            

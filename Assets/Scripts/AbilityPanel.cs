@@ -6,7 +6,7 @@ using Factories.GenericStatic;
 public class AbilityPanel : MonoBehaviour
 {
     [SerializeField] private AbilityButton buttonPrefab;
-
+    
     private void OnEnable()
     {
         foreach (string name in GenericStaticFactory<BaseAbility>.GetComponentNames())
@@ -16,6 +16,7 @@ public class AbilityPanel : MonoBehaviour
             
             btn.SetAbilityName(name);
             btn.transform.SetParent(transform);
+            
         }
         
     }
